@@ -1,4 +1,27 @@
 <?php
+
+class Student {
+    private $ch, $eng, $math;
+    public function __Contrust($ch, $eng, $math){
+        $this->ch = $ch ;
+        $this->eng = $eng ;
+        $this->math = $math ;
+    }
+    public function sum(){
+        return $this->ch + $this->eng + $this->math;
+    }
+    public function avg(){
+        return $this->sum() / 3;
+    }
+    public function setch($newch){$this->ch= $newch;}
+}
+
+
+
+
+
+
+
 function isTWid($id) : bool {
     // 1. pre check
     // length, A, 1/2, 3-10 => 0~9
